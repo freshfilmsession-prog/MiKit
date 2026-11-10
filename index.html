@@ -1,0 +1,222 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Refugio · Kit de supervivencia</title><style>
+:root{--bg:#0a0d08;--pn:#131a10;--ln:#2c3a22;--g:#7dff4a;--a:#ffb000;--r:#ff3b30;--t:#cfe8bf;--m:#7d9070;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}*{box-sizing:border-box}
+body{margin:0;background:var(--bg) repeating-linear-gradient(0deg,#0000 0 2px,#0004 2px 3px);color:var(--t);font:15px/1.4 "Courier New",monospace;max-width:900px;margin:auto;padding:10px}
+h1{margin:4px 0;color:var(--g);font-size:22px;text-shadow:0 0 8px var(--g);letter-spacing:1px}
+.tick{background:#2a0a07;border:1px dashed var(--r);color:var(--a);padding:6px 8px;font-size:12px;margin:6px 0}
+.pn{background:var(--pn);border:1px solid var(--ln);padding:10px;margin:8px 0}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+label{font-size:12px;color:var(--m);display:flex;flex-direction:column;gap:2px}
+input,select,button{background:#0d130b;color:var(--g);border:1px solid var(--ln);padding:7px;font:inherit;border-radius:2px}
+button{cursor:pointer}button.on{background:var(--g);color:#000;font-weight:bold}
+.rings{display:flex;gap:10px;flex-wrap:wrap;justify-content:space-around}
+.rg{text-align:center;font-size:11px}.ring{width:68px;height:68px;border-radius:50%;background:conic-gradient(var(--c) calc(var(--p)*1%),#222 0);display:grid;place-items:center;margin:auto}
+.ring b{background:var(--pn);width:52px;height:52px;border-radius:50%;display:grid;place-items:center;font-size:14px;color:var(--c)}
+.it{display:flex;gap:8px;align-items:flex-start;padding:7px 0;border-bottom:1px solid var(--ln)}
+.it input{width:20px;height:20px;accent-color:var(--g);flex:none}.it.d{opacity:.5}.it.d .nm{text-decoration:line-through}
+.q{color:var(--a);font-weight:bold}.j{font-size:11px;color:var(--m);font-style:italic}
+.bd{font-size:10px;border:1px solid var(--g);color:var(--g);padding:0 3px;margin-right:3px}.bd.x{border-color:var(--r);color:var(--r)}
+.kp{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px}.k{background:#0d130b;border:1px solid var(--ln);padding:8px;text-align:center}.k b{display:block;font-size:22px;color:var(--a)}
+.bar{height:10px;background:#222;margin:3px 0}.bar i{display:block;height:100%;background:var(--g)}
+h2{font-size:15px;color:var(--a);margin:6px 0}small{color:var(--m)}
+@property --p{syntax:"<number>";inherits:false;initial-value:0}
+body[data-sc=A]{--g:#ffc247;--a:#ff8a3d}body[data-sc=N]{--g:#b6ff3a;--a:#e8ff7a}body[data-sc=X]{--g:#c58bff;--a:#7ef0ff}body[data-sc=Z]{--g:#ff7a3d;--a:#ff4d4d}
+:root{--bg:#06080a;--pn:#0e1412;--ln:#ffffff14;--t:#e6efe8;--m:#8a9a90;--r:#ff4d4d}
+body{font:16px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:radial-gradient(120% 60% at 50% -10%,color-mix(in srgb,var(--g) 18%,transparent),transparent 60%),var(--bg);padding:12px 12px 100px;-webkit-tap-highlight-color:transparent}
+.pn{background:linear-gradient(160deg,#ffffff0d,#ffffff03);border:1px solid var(--ln);border-radius:18px;padding:14px;margin:12px 0;backdrop-filter:blur(8px);box-shadow:0 8px 30px #0008}
+.hd{display:flex;gap:12px;align-items:center;margin:6px 0 10px}
+.disc{flex:none;width:58px;height:58px;border-radius:50%;background:radial-gradient(circle,#fff 0 6%,#3fa66a 7% 16%,#2b6fa8 17% 68%,#eaf6ff 69% 80%,#0000 81%);box-shadow:0 0 24px color-mix(in srgb,var(--g) 50%,transparent);animation:sp 20s linear infinite;position:relative}
+.disc:after{content:"";position:absolute;top:2px;left:50%;width:9px;height:9px;margin-left:-4px;border-radius:50%;background:#ffd34d;box-shadow:0 0 10px #ffd34d}
+@keyframes sp{to{transform:rotate(360deg)}}
+h1{font:900 27px/1 system-ui;letter-spacing:2px;background:linear-gradient(90deg,var(--g),#fff,var(--g));background-size:200%;-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:none;animation:sh 4s linear infinite;margin:0}
+@keyframes sh{to{background-position:-200% 0}}
+.sb{font-size:11px;letter-spacing:1.5px;color:var(--m);text-transform:uppercase;margin-top:5px}
+.tick{border-radius:14px;background:#2a0b0b;border:1px solid #ff4d4d66;color:#ffd0c8;font-size:13px;padding:10px 12px;animation:al 2s ease-in-out infinite}
+@keyframes al{50%{box-shadow:0 0 18px #ff4d4d55}}
+#tk span{display:block;animation:up .5s both}
+input,select,button{border-radius:12px;font-size:16px;padding:11px;background:#ffffff0a;border:1px solid var(--ln);color:var(--t)}
+.pn>.row label{flex:1 1 42%}.pn>.row input,.pn>.row select{width:100%!important}.row label{text-transform:uppercase;letter-spacing:1px;font-size:10px}
+.rings{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}.rg{font-size:10px;color:var(--m)}
+.ring{width:100%;max-width:62px;height:auto;aspect-ratio:1;transition:--p 1.2s cubic-bezier(.2,.8,.2,1)}.ring b{width:78%;height:78%;font-size:12px;background:#0a0f0d}
+.it{padding:13px 2px;gap:12px}.it input{width:26px;height:26px;margin-top:2px}
+.j{display:block;margin-top:6px;padding:6px 9px;border-left:3px solid var(--r);background:#ff4d4d12;color:#ffb3aa;font-size:12px;font-style:normal;border-radius:0 8px 8px 0}
+.cn{border-radius:18px;padding:14px;margin:12px 0;background:repeating-linear-gradient(135deg,#ff4d4d12 0 10px,#0000 10px 20px),#1a0909;border:1px dashed #ff4d4d99;animation:up .5s both}.cn b{display:block;color:var(--r);font-size:11px;letter-spacing:2px;margin-bottom:6px}.cn span{font-size:14px;color:#ffe3de}
+.bar{height:8px;border-radius:8px;overflow:hidden}.bar i{border-radius:8px;transition:width .8s cubic-bezier(.2,.8,.2,1);background:linear-gradient(90deg,var(--a),var(--g))}
+.k{border-radius:14px;background:#ffffff08}.k b{font-size:26px}h2{font-size:13px;letter-spacing:1.5px;text-transform:uppercase}
+@keyframes up{from{opacity:0;transform:translateY(14px)}}
+.an .pn,.an .cn,.an .k{animation:up .5s both}.an .it{animation:up .4s both}.an .it:nth-child(3n){animation-delay:.08s}.an .it:nth-child(3n+1){animation-delay:.16s}
+#tabs{position:fixed;left:0;right:0;bottom:0;display:grid;grid-template-columns:repeat(4,1fr);gap:4px;padding:8px 8px calc(8px + env(safe-area-inset-bottom,0px));background:#06080ae8;backdrop-filter:blur(14px);border-top:1px solid var(--ln);z-index:9}
+#tabs button{border:0;background:none;color:var(--m);font-size:12px;padding:9px 2px;border-radius:12px}
+#tabs button.on{background:color-mix(in srgb,var(--g) 18%,transparent);color:var(--g);font-weight:700}
+
+body[data-sc=A]{--g:#e3b341;--a:#f1d58a}body[data-sc=N]{--g:#a9c23f;--a:#d4e38a}body[data-sc=X]{--g:#4fb3d9;--a:#9bd8ee}body[data-sc=Z]{--g:#d08a4e;--a:#ecc08f}
+:root{--bg:#07090a;--t:#e8e6dc;--m:#8b8f82;--r:#d9534f}
+body{background:linear-gradient(#ffffff05 1px,transparent 1px) 0 0/100% 32px,radial-gradient(120% 50% at 50% -10%,color-mix(in srgb,var(--g) 14%,transparent),transparent 65%),var(--bg)}
+.pn{border-radius:6px;border:1px solid #ffffff1a;border-top:2px solid var(--g)}
+.emb{flex:none;width:50px;height:58px;clip-path:polygon(50% 0,100% 20%,100% 70%,50% 100%,0 70%,0 20%);background:var(--g);display:grid;place-items:center;color:#07090a;font:900 15px system-ui;animation:pl 3s ease-in-out infinite}
+@keyframes pl{50%{filter:brightness(1.3)}}
+h1{font:800 26px/1 "Arial Narrow","Roboto Condensed",system-ui;letter-spacing:8px;background:none;color:var(--t);animation:none}
+.tick{border-radius:6px;background:#ffffff08;border:1px solid #ffffff1a;border-left:3px solid var(--g);color:var(--t);animation:none}
+.cn{border-radius:6px;background:#ffffff08;border:1px solid #ffffff1a;border-left:3px solid var(--g)}.cn b{color:var(--g)}.cn span{color:var(--t)}
+.j{border-left:3px solid var(--g);background:#ffffff08;color:var(--m)}.bd.x{border-color:var(--m);color:var(--m)}
+input,select,button,.k{border-radius:6px}#tabs button{border-radius:4px}
+
+.gb{margin-left:auto;font-size:20px;padding:8px 12px}
+#tabs{grid-template-columns:repeat(5,1fr);gap:2px}#tabs button{font-size:10.5px;padding:8px 0}
+.it{flex-wrap:wrap}.bl{display:flex;flex-direction:row;gap:12px;flex:1 1 100%;text-transform:none;letter-spacing:0;font-size:15px;color:var(--t)}.bl input{width:26px;height:26px;flex:none;accent-color:var(--g);margin-top:2px}
+.it input[type=date]{width:auto;height:auto;margin:0 0 0 38px;font-size:14px;padding:7px}
+.pop{position:fixed;top:calc(env(safe-area-inset-top,0px) + 8px);left:10px;right:10px;max-width:700px;margin:auto;z-index:25;background:#0d1210f5;backdrop-filter:blur(12px);border:1px solid #ffffff1f;border-left:3px solid var(--g);border-radius:6px;padding:12px 14px;transform:translateY(-170%);transition:transform .45s cubic-bezier(.2,.8,.2,1);box-shadow:0 10px 30px #000a;font-size:14px}.pop.on{transform:none}
+.pop b{display:block;color:var(--g);font-size:10px;letter-spacing:2px;text-transform:uppercase;margin-bottom:4px}.pb{display:flex;gap:8px;margin-top:8px}.pb button{padding:6px 10px;font-size:12px}.pb button:last-child{margin-left:auto}
+.sheet{position:fixed;inset:0;background:#000b;z-index:30;opacity:0;pointer-events:none;transition:opacity .3s;display:flex;align-items:flex-end}.sheet.on{opacity:1;pointer-events:auto}
+.sh{background:#0d1210;border-top:2px solid var(--g);border-radius:12px 12px 0 0;padding:16px 16px calc(16px + env(safe-area-inset-bottom,0px));max-height:88vh;overflow-y:auto;width:100%;max-width:900px;margin:auto;transform:translateY(30px);transition:transform .35s}.sheet.on .sh{transform:none}
+.sh li{margin:6px 0;font-size:14px}.sh a{color:var(--g)}
+</style></head><body>
+<header class="hd"><div class="emb">72h</div><div><h1>REFUGIO</h1><div class="sb">Preparación del hogar · Kit 72 h a 14 días</div></div><button id="gd" class="gb" aria-label="Guía UE">📘</button></header>
+<div class="tick" id="tk"></div>
+<div class="pn"><div class="row">
+<label>Personas<input id="p" type="number" min="1" max="20" style="width:70px"></label>
+<label>Mascotas<input id="pets" type="number" min="0" max="10" style="width:70px"></label>
+<label>Autonomía<select id="days"><option value="3">72 h (UE)</option><option value="7">7 días</option><option value="10">10 días (DE)</option><option value="14">14 días</option></select></label>
+<label>Amenaza<select id="sc"><option value="A">⚡ Apagón</option><option value="N">☢ Nuclear / radiológico</option><option value="X">🌊 Catástrofe natural</option><option value="Z">🏚 Crisis prolongada</option></select></label>
+</div></div>
+<div class="pn"><div class="rings" id="rings"></div></div>
+<div class="row" id="tabs"></div>
+<div id="v"></div>
+<div class="pn"><small>Fuentes: UE (mínimo 72 h, Comisión Europea), DK (3 días, 3 L de agua por persona y día), DE (10 días, BBK), UK y FR (3 días / 72 h). Los ítems EXTRA complementan las listas oficiales según el escenario. Consulta siempre las indicaciones de tu protección civil.</small></div>
+<div id="pop" class="pop"></div><div id="sheet" class="sheet"></div>
+<script>
+const I=`Agua potable|L|pd|3|he|ANXZ|EU DK DE UK FR|Mínimo 3 L por persona y día (DK); DE: 2 L de bebida y 0,5 L para cocinar. Renueva cada 6 meses.
+Comida que no necesita cocinar|raciones|pd|3|he|ANXZ|EU DK DE UK FR|Elige alimentos que no necesiten cocción ni agua añadida.
+Pastillas potabilizadoras|ud|pd|2|he|ANXZ|DE|
+Filtro de agua portátil|ud|hh|1|e|ANXZ|DE UK|
+Hornillo de camping|ud|hh|1|h|ANZ|DK DE|
+Cartuchos de gas|ud|hd|0.3|h|ANZ|DK|
+Linterna o frontal|ud|pp|1|he|ANXZ|EU UK FR DE DK|
+Pilas de repuesto|pack|hh|2|he|ANXZ|EU UK|
+Radio de pilas o manivela|ud|hh|1|he|ANXZ|EU UK FR DK|Para recibir avisos oficiales si fallan móviles e internet.
+Batería externa|ud|pp|1|he|ANXZ|EU FR|
+Cargador solar|ud|hh|1|h|A|-|Recarga móviles y radio sin red eléctrica.
+Botiquín|ud|hh|1|he|ANXZ|EU UK FR DE DK|
+Medicación habitual|días|hd|1|he|ANXZ|EU DE DK|
+Efectivo en billetes pequeños|€|pp|40|he|ANXZ|EU DK DE|Cajeros y datáfonos pueden dejar de funcionar.
+Documentos y copias|set|pp|1|he|ANXZ|EU FR DE|
+Pendrive con copias digitales|ud|hh|1|e|ANXZ|EU|
+Plan familiar en papel (contactos y punto de encuentro)|ud|hh|1|he|ANXZ|EU DK FR|
+Llaves de repuesto|set|hh|1|e|ANXZ|-|
+Mantas o manta térmica|ud|pp|1|he|ANXZ|UK DK DE|
+Ropa de abrigo e impermeable|set|pp|1|e|ANXZ|UK FR|
+Papel higiénico|rollos|pd|0.3|h|ANXZ|DE DK|
+Higiene y toallitas|kit|hh|1|he|ANXZ|DK DE|
+Bolsas de basura|ud|hd|1|h|ANXZ|DE|
+Mechero y cerillas|ud|hh|2|he|ANXZ|DK FR|
+Velas|ud|hd|0.5|h|AN|DK|
+Comida y agua para mascotas|días|pt|1|he|ANXZ|DK|
+Cinta americana|rollo|hh|1|he|ANXZ|DE|Reparaciones, sellar ventanas y fijar vendajes.
+Multiherramienta|ud|hh|1|he|ANXZ|-|
+Silbato|ud|pp|1|e|ANXZ|FR|
+Mapa de papel|ud|hh|1|e|ANXZ|-|Sin cobertura ni GPS, un mapa en papel sigue funcionando.
+Mascarillas FFP2|ud|pp|4|he|NZ|FR|
+Comprimidos de yodo|dosis|pp|2|he|N|FR|
+Plástico y cinta para sellar ventanas|rollo|hh|2|h|N|-|
+Contador Geiger|ud|hh|1|h|N|-|Opcional. Sigue siempre las indicaciones de las autoridades.
+Botas robustas|par|pp|1|e|NZ|-|
+Kit de herramientas básicas de reparación|set|hh|1|h|Z|-|
+Extintor y detector de CO|ud|hh|1|h|Z|-|Previene incendios e intoxicación al usar hornillos.
+Bolsa estanca para documentos|ud|hh|1|he|X|-|Protege documentos y móvil del agua.
+Chaleco reflectante|ud|pp|1|e|X|-|Te hace visible de noche o con humo.
+Sacos de arena o barrera antiinundación|set|hh|1|h|X|-|`.split("\n").map(l=>{const a=l.split("|");return{n:a[0],u:a[1],t:a[2],k:+a[3],b:a[4],s:a[5],r:a[6],j:a[7]}});
+const SC={A:"⚡ Apagón",N:"☢ Nuclear",X:"🌊 Catástrofe",Z:"🏚 Crisis"};
+let S={p:2,pets:0,days:10,sc:"A",chk:{},food:[],water:0,tab:"h"};
+try{Object.assign(S,JSON.parse(localStorage.getItem("tps")||"{}"))}catch(e){}
+const sv=()=>{try{localStorage.setItem("tps",JSON.stringify(S))}catch(e){}};
+const $=i=>document.getElementById(i);
+function qty(it,b){const d=b=="e"?3:S.days,P=S.p,t=it.t,k=it.k;const q=t=="pd"?k*P*d:t=="pp"?k*P:t=="hh"?k:t=="hd"?k*d:t=="pt"?k*S.pets*d:k*S.pets;return Math.ceil(q-1e-9)}
+function pairs(f){const o=[];I.forEach((it,i)=>[...it.b].forEach(b=>{if(qty(it,b)>0&&f(it))o.push({it,i,b,k:i+b})}));return o}
+const pct=(f,bag)=>{const a=pairs(f).filter(x=>!bag||x.b==bag);return a.length?Math.round(100*a.filter(x=>S.chk[x.k]).length/a.length):0};
+const col=p=>p<34?"var(--r)":p<67?"var(--a)":"var(--g)";
+const ring=(l,p)=>`<div class="rg"><div class="ring" style="--p:${p};--c:${col(p)}"><b>${p}%</b></div>${l}</div>`;
+function food(){const kc=S.food.reduce((s,f)=>s+f.q*f.k,0);return{kc,d:kc/(2000*S.p),w:S.water/(3*S.p)}}
+function render(){
+document.body.dataset.sc=S.sc;$("p").value=S.p;$("pets").value=S.pets;$("days").value=S.days;$("sc").value=S.sc;
+const RG=[["🇪🇺 UE 72h","EU"],...Object.entries(SC).map(([c,l])=>[l,c])];if(!$("rings").children.length)$("rings").innerHTML=RG.map(r=>ring(r[0],0)).join("");setTimeout(()=>[...$("rings").children].forEach((el,i)=>{const p=pct(x=>x.s.includes(RG[i][1])),rn=el.firstChild;rn.style.setProperty("--p",p);rn.style.setProperty("--c",col(p));rn.firstChild.textContent=p+"%"}),40);
+$("tabs").innerHTML=[["h","🎒 Casa"],["e","🏃 Evac."],["b","🩹 Botiquín"],["f","🥫 Despensa"],["k","📊 KPI"]].map(t=>`<button data-t="${t[0]}" class="${S.tab==t[0]?"on":""}">${t[1]}</button>`).join("");
+const v=$("v");
+if(S.tab=="h"||S.tab=="e"){const L=pairs(x=>x.s.includes(S.sc)&&x.b.includes(S.tab)).filter(x=>x.b==S.tab);const p=pct(x=>x.s.includes(S.sc),S.tab);
+v.innerHTML=cn()+`<div class="pn"><h2>${S.tab=="h"?"MOCHILA DE CASA · "+S.days+" días":"MOCHILA DE EVACUACIÓN · 72 h"} · ${SC[S.sc]} · ${p}%</h2><div class="bar"><i style="width:${p}%"></i></div>`+L.map(x=>{const it=x.it,u=S.chk[x.k];return `<label class="it ${u?"d":""}" style="flex-direction:row;color:var(--t);font-size:15px"><input type="checkbox" data-k="${x.k}" ${u?"checked":""}><span><span class="nm">${it.n}</span> <span class="q">× ${qty(it,x.b)} ${it.u}</span><br>${it.r.split(" ").map(r=>r=="-"?'<span class="bd x">EXTRA</span>':`<span class="bd">${r}</span>`).join("")}${it.j?`<span class="j">${it.j}</span>`:""}</span></label>`}).join("")+"</div>"}
+else if(S.tab=="b"){v.innerHTML=cn()+bot()}else if(S.tab=="f"){const f=food();
+v.innerHTML=`<div class="pn"><h2>INVENTARIO DE ALIMENTOS</h2><div class="row"><label>Alimento<input id="fn" placeholder="Arroz, latas..."></label><label>Cantidad<input id="fq" type="number" min="1" value="1" style="width:70px"></label><label>kcal/ud<input id="fk" type="number" min="0" value="500" style="width:80px"></label><label>Caduca<input id="fe" type="date"></label><button id="fa">+ Añadir</button></div>
+<div class="row" style="margin-top:8px"><label>Litros de agua almacenados<input id="fw" type="number" min="0" value="${S.water}" style="width:90px"></label></div></div>
+<div class="pn"><div class="kp"><div class="k"><b>${f.d.toFixed(1)}</b>días de comida</div><div class="k"><b>${f.w.toFixed(1)}</b>días de agua (3 L)</div><div class="k"><b>${Math.round(f.kc)}</b>kcal totales</div></div></div>
+<div class="pn">`+(S.food.length?S.food.map((x,i)=>`<div class="it"><span style="flex:1">${x.n.replace(/</g,"&lt;")} × ${x.q} · ${x.q*x.k} kcal${x.e?" · cad. "+x.e:""}${x.e&&x.e<new Date(Date.now()+864e5*30).toISOString().slice(0,10)?' <b style="color:var(--r)">¡CADUCA PRONTO!</b>':""}</span><button data-x="${i}">✕</button></div>`).join(""):"<small>Aún no has registrado alimentos.</small>")+"</div>"}
+else{const f=food(),all=pct(()=>true),m=pairs(()=>true).filter(x=>!S.chk[x.k]).length,cr=S.food.filter(x=>x.e&&x.e<new Date(Date.now()+864e5*30).toISOString().slice(0,10)).length;
+const R=all<20?"SIN PREPARAR":all<50?"NIVEL BÁSICO":all<80?"PREPARADO":all<100?"MUY PREPARADO":"AUTOSUFICIENTE";
+v.innerHTML=cn()+`<div class="pn"><h2>RANGO: ${R}</h2><div class="kp"><div class="k"><b>${all}%</b>completado total</div><div class="k"><b>${m}</b>ítems faltantes</div><div class="k"><b>${Math.min(f.d,f.w).toFixed(1)}</b>días de autonomía real</div><div class="k"><b>${S.p+S.pets}</b>bocas a defender</div><div class="k"><b>${cr}</b>alimentos a punto de caducar</div><div class="k"><b>${bpc()}%</b>botiquín completo</div><div class="k"><b>${bcad()}</b>botiquín caducado o a punto</div><div class="k"><b>${Math.round(S.days*3*S.p)}</b>L de agua objetivo</div></div></div>
+<div class="pn"><h2>% POR AMENAZA Y MOCHILA</h2>`+[["EU","🇪🇺 Recomendación UE"],...Object.entries(SC)].map(([c,l])=>{const a=pct(x=>x.s.includes(c),"h"),b=pct(x=>x.s.includes(c),"e");return `<div>${l}<small> casa ${a}% · evacuación ${b}%</small><div class="bar"><i style="width:${a}%"></i></div><div class="bar"><i style="width:${b}%;background:var(--a)"></i></div></div>`}).join("")+"</div>"}
+sv()}
+document.addEventListener("input",e=>{const i=e.target.id;if(i=="p"||i=="pets"||i=="days"||i=="sc"){S[i]=i=="sc"?e.target.value:Math.max(i=="p"?1:0,+e.target.value||0);render()}if(i=="fw"){S.water=+e.target.value||0;sv()}});
+document.addEventListener("change",e=>{if(e.target.id=="fw"){S.water=+e.target.value||0;render()}if(e.target.dataset.k){S.chk[e.target.dataset.k]=e.target.checked;navigator.vibrate&&navigator.vibrate(15);render()}});
+document.addEventListener("click",e=>{const d=e.target.dataset;if(d.t){S.tab=d.t;render();$("v").classList.add("an");setTimeout(()=>$("v").classList.remove("an"),1200);scrollTo({top:0,behavior:"smooth"})}if(d.x!==undefined){S.food.splice(+d.x,1);render()}if(e.target.id=="fa"){const n=$("fn").value.trim();if(n){S.food.push({n,q:+$("fq").value||1,k:+$("fk").value||0,e:$("fe").value});render()}}});
+const TIPS=["Revisa las fechas de caducidad cada 6 meses.","Guarda el agua en envases opacos y en lugar fresco.","Acuerda un punto de encuentro familiar y comparte el plan.","Lleva copias de documentos en papel y en pendrive.","Ten efectivo en billetes pequeños.","Carga baterías y móviles en cuanto salte una alerta."];
+const BR={A:["APAGÓN","Mantén cerrados nevera (≈4 h) y congelador (24-48 h). Desconecta aparatos sensibles y usa linternas mejor que velas. Infórmate por radio."],N:["NUCLEAR / RADIOLÓGICO","Refúgiate en el interior, en el centro del edificio o en un sótano. Cierra ventanas y ventilación. Sigue solo instrucciones oficiales y toma yodo únicamente si te lo indican."],X:["CATÁSTROFE NATURAL","Conoce tus rutas de evacuación y las zonas altas. Guarda documentos en bolsa estanca. En inundaciones, nunca cruces zonas anegadas."],Z:["CRISIS PROLONGADA","Prioriza agua, comida sin cocción, medicación y comunicaciones. Rota las existencias y fija puntos de encuentro."]};
+function cn(){const b=BR[S.sc];return `<div class="cn"><b>BRIEFING · ${b[0]}</b><span>${b[1]}</span></div>`}
+let ti=0;const tp=()=>{$("tk").innerHTML="<span>CONSEJO · "+TIPS[ti++%TIPS.length]+"</span>"};setInterval(tp,6000);tp();
+S.bk=S.bk||{};S.bx=S.bx||{};S.med=S.med||[];
+const esc=t=>String(t).replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+const bg=r=>r.split(" ").map(x=>x=="-"?'<span class="bd x">EXTRA</span>':`<span class="bd">${x}</span>`).join("");
+const BO=`Curas|Gasas y compresas estériles|ud|hh|10|EU FR|0|
+Curas|Tiritas surtidas|ud|pp|10|-|0|
+Curas|Vendas elásticas|ud|hh|2|-|0|
+Curas|Esparadrapo|rollo|hh|1|FR|0|
+Curas|Suero fisiológico|ud|hh|4|-|1|Para lavar heridas y ojos.
+Curas|Antiséptico para heridas|ud|hh|1|-|1|
+Curas|Crema o hidrogel para quemaduras|ud|hh|1|-|1|
+Protección e higiene|Guantes desechables|pares|pp|2|EU FR|0|Mejor sin látex.
+Protección e higiene|Gel hidroalcohólico|ud|hh|1|FR|1|
+Protección e higiene|Toallitas húmedas|pack|hh|1|FR|0|
+Protección e higiene|Mascarillas|ud|pp|2|-|0|
+Instrumental|Tijeras|ud|hh|1|-|0|
+Instrumental|Pinzas|ud|hh|1|-|0|
+Instrumental|Termómetro|ud|hh|1|-|0|
+Instrumental|Manta térmica|ud|pp|1|-|0|Previene la hipotermia.
+Medicamentos sin receta|Paracetamol u otro analgésico habitual|caja|hh|1|FR|1|Sigue siempre el prospecto.
+Medicamentos sin receta|Sales de rehidratación oral|sobres|pp|3|-|1|
+Medicamentos sin receta|Antihistamínico|caja|hh|1|-|1|
+Medicamentos sin receta|Antidiarreico|caja|hh|1|-|1|
+Documentación|Copia de recetas e informe médico|set|hh|1|EU FR|0|
+Documentación|Alergias, grupo sanguíneo y contactos médicos|ud|hh|1|-|0|
+Documentación|Guía de primeros auxilios|ud|hh|1|EU|0|Aprende lo básico antes de necesitarlo.
+Específicos|Suministros para bebés o niños (fórmula, pañales, medicación pediátrica)|ud|hh|1|DK|1|Solo si hay niños. Consulta al pediatra.`.split("\n").map(l=>{const a=l.split("|");return{c:a[0],n:a[1],u:a[2],t:a[3],k:+a[4],r:a[5],x:a[6]=="1",j:a[7]}});
+const dT=()=>new Date().toISOString().slice(0,10),dS=()=>new Date(Date.now()+864e5*30).toISOString().slice(0,10);
+const bpc=()=>Math.round(100*BO.filter((_,i)=>S.bk[i]).length/BO.length);
+const bcad=()=>BO.filter((it,i)=>S.bx[i]&&S.bx[i]<dS()).length+S.med.filter(m=>m.e&&m.e<dS()).length;
+function bot(){const T=dT(),D=dS(),n=BO.length,ok=BO.filter((_,i)=>S.bk[i]).length,p=bpc();let c="";
+let h=`<div class="pn"><h2>BOTIQUÍN · ${S.p} ${S.p>1?"personas":"persona"} · ${p}%</h2><div class="bar"><i style="width:${p}%"></i></div><small>${ok} de ${n} elementos</small>`;
+BO.forEach((it,i)=>{if(it.c!=c){c=it.c;h+=`<h2 style="margin-top:14px">${c}</h2>`}const e=S.bx[i],u=S.bk[i];
+h+=`<div class="it ${u?"d":""}"><label class="bl"><input type="checkbox" data-bk="${i}" ${u?"checked":""}><span><span class="nm">${it.n}</span> <span class="q">× ${qty(it,"h")} ${it.u}</span><br>${bg(it.r)}${it.j?`<span class="j">${it.j}</span>`:""}${e&&e<T?'<span class="j" style="border-color:var(--r);color:var(--r)">CADUCADO</span>':e&&e<D?'<span class="j" style="border-color:var(--a)">Caduca en menos de 30 días</span>':""}</span></label>${it.x?`<input type="date" data-bx="${i}" value="${e||""}" aria-label="Caducidad">`:""}</div>`});
+h+=`</div><div class="pn"><h2>MEDICACIÓN PERSONAL</h2><div class="row"><label>Medicamento<input id="mn"></label><label>Para quién<input id="mw"></label><label>Días de reserva<input id="md" type="number" min="0" value="${S.days}"></label><label>Caduca<input id="me" type="date"></label><button id="ma">+ Añadir</button></div>`;
+h+=S.med.map((m,i)=>`<div class="it"><span style="flex:1"><b>${esc(m.n)}</b>${m.w?" · "+esc(m.w):""}<br><small>${m.d} días de reserva${m.e?" · caduca "+m.e:""}</small>${m.d<S.days?`<span class="j" style="border-color:var(--r);color:var(--r)">Reserva insuficiente: faltan ${S.days-m.d} días para tu autonomía de ${S.days}</span>`:""}${m.e&&m.e<T?'<span class="j" style="border-color:var(--r);color:var(--r)">CADUCADA</span>':""}</span><button data-m="${i}">✕</button></div>`).join("");
+return h+`<small>Consulta a tu médico o farmacéutico qué medicación reservar y cómo conservarla. Sigue siempre el prospecto; en niños, la dosis la indica el pediatra.</small></div>`}
+const SRC={UE:"UE · Comisión Europea (2026)",DK:"Dinamarca · Beredskabsstyrelsen",FR:"Francia",DE:"Alemania · BBK",UK:"Reino Unido",EXTRA:"Buenas prácticas"};
+const TPS={all:[["72 horas es un mínimo, no una garantía de que llegue ayuda al tercer día. Algunos países recomiendan una semana o más.","UE"],["Distingue entre suministros para quedarte en casa y una mochila de evacuación lista para salir rápido.","UE"],["Apunta en papel los contactos de la familia, un punto de encuentro y el refugio más cercano.","UE"],["Prepárate paso a paso y con soluciones asequibles: no hace falta comprarlo todo de golpe.","UE"],["Aprende lo básico: reconocer una alarma oficial, contrastar la información, cuándo llamar al 112 y primeros auxilios.","UE"],["Si suena una sirena, entra en un edificio e infórmate por los canales oficiales.","DK"],["Si hay bebés, mayores o personas enfermas en casa, reserva suministros extra. Piensa también en las mascotas.","DK"],["Activa las alertas oficiales del móvil y ten un plan familiar con contactos de emergencia.","UK"]],
+h:[["Agua para beber, cocinar e higiene. Dinamarca recomienda 3 L por persona y día.","DK"],["Comida que se conserve a temperatura ambiente y pueda comerse sin calentar.","UE"],["Prevé iluminación y calefacción o refrigeración alternativas, y una solución para el baño y los residuos sin agua corriente.","UE"],["Radio de pilas y power banks cargados: si falla la red, la radio sigue informando.","UE"],["Alemania recomienda cubrir hasta 10 días de comida y bebida en casa.","DE"]],
+e:[["En la mochila de evacuación: documentos de identidad, efectivo y medicación esencial.","UE"],["Copias de recetas, llaves de repuesto y ropa de abrigo: salir rápido y con lo imprescindible.","FR"],["Lleva efectivo en billetes pequeños y monedas por si fallan los pagos digitales.","UE"]],
+b:[["Incluye medicamentos personales y material de primeros auxilios en el botiquín.","UE"],["Guantes, compresas, gel hidroalcohólico o toallitas y paracetamol figuran en la guía francesa.","FR"],["Personas con discapacidad: medicación extra, batería de respaldo para ayudas técnicas y apoyos de comunicación.","UE"],["Revisa caducidades cada 6 meses y no mezcles la medicación de distintas personas.","EXTRA"]],
+f:[["Rota tu despensa: consume lo más antiguo y repón, así nada caduca.","EXTRA"],["Con poca agua, evita alimentos muy salados.","EXTRA"]],
+k:[["La UE propone el 23 de octubre como Día Europeo de la Preparación a partir de 2027.","UE"]]};
+let pi=0,pt;const hideP=()=>$("pop").classList.remove("on");
+function tip(n){if(S.tips===false&&!n)return;const pool=(TPS[S.tab]||[]).concat(TPS.all);pi=n?pi+1:Math.floor(Math.random()*pool.length);const t=pool[pi%pool.length];
+$("pop").innerHTML=`<b>CONSEJO · ${SRC[t[1]]}</b><span>${t[0]}</span><div class="pb"><button id="pn">Otro consejo</button><button id="px">✕</button></div>`;$("pop").classList.add("on");clearTimeout(pt);pt=setTimeout(hideP,11000)}
+const closeG=()=>$("sheet").classList.remove("on");
+function openG(){const g={};Object.values(TPS).flat().forEach(t=>{(g[t[1]]=g[t[1]]||[]).push(t[0])});
+$("sheet").innerHTML=`<div class="sh"><h2>📘 Guía de preparación</h2><small>Resumen de recomendaciones de la UE, Dinamarca, Francia, Alemania y Reino Unido. Son orientaciones no vinculantes: manda tu protección civil.</small>`+Object.keys(SRC).filter(k=>g[k]).map(k=>`<h2 style="margin-top:14px">${SRC[k]}</h2><ul>${g[k].map(x=>`<li>${x}</li>`).join("")}</ul>`).join("")+`<div class="row" style="margin-top:12px"><button id="tt">Consejos emergentes: ${S.tips===false?"DESACTIVADOS":"ACTIVADOS"}</button></div><p><small>Fuentes: <a href="https://european-union.europa.eu/news-and-events/featured-news/commission-gives-guidelines-how-europeans-can-prepare-crisis-2026-11-03_en" target="_blank" rel="noopener">Comisión Europea</a> · <a href="https://brs.dk/globalassets/brs---beredskabsstyrelsen/dokumenter/forberedt/oversaettelser/-forberedt-pa-kriser_en-.pdf" target="_blank" rel="noopener">Beredskabsstyrelsen (DK)</a></small></p><button id="gc" style="width:100%">Cerrar</button></div>`;$("sheet").classList.add("on")}
+document.addEventListener("change",e=>{const d=e.target.dataset;if(d.bk!==undefined){S.bk[d.bk]=e.target.checked;navigator.vibrate&&navigator.vibrate(15);render()}if(d.bx!==undefined){S.bx[d.bx]=e.target.value;render()}});
+document.addEventListener("click",e=>{const d=e.target.dataset,i=e.target.id;
+if(d.m!==undefined){S.med.splice(+d.m,1);render()}
+if(i=="ma"){const n=$("mn").value.trim();if(n){S.med.push({n,w:$("mw").value.trim(),d:+$("md").value||0,e:$("me").value});render()}}
+if(i=="gd")openG();if(i=="gc"||i=="sheet")closeG();
+if(i=="tt"){S.tips=S.tips===false;sv();openG()}
+if(i=="pn")tip(1);if(i=="px")hideP();
+if(d.t&&S.tips!==false)setTimeout(()=>tip(0),700)});
+setTimeout(()=>tip(0),1800);
+render();
+</script></body></html>
